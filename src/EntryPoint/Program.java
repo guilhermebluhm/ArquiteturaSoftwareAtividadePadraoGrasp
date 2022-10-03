@@ -28,13 +28,12 @@ public class Program {
         Personagem personagem = impl.geradorPersonagemSolicitadoUsuario(arma);
         Mundo mundo = impl_mundo.mundoAtualPersonagemJogador(AreaJogo.PANTANO);
 
-        System.out.println(personagem.getNomePersonagem());
-        System.out.println(mundo.getDescricaoNivel());
-
-        Inimigo inimigo_pantano = new Inimigo(idUnicoMonstro, TipoMonstro.DIABRETE,500.00,100.00);
+        Inimigo inimigo_pantano = new Inimigo(idUnicoMonstro, TipoMonstro.DEMONIO_DECAIDO,500.00,100.00);
         mundo.setInimigo(inimigo_pantano);
 
-        System.out.println(mundo.getInimigo().getMonstro());
+        System.out.println(impl_mundo.gerarInstanciaJogo(mundo, personagem));
+
+
     }
 
 }

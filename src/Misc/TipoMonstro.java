@@ -2,7 +2,7 @@ package Misc;
 
 public enum TipoMonstro {
 
-    DIABRETE,
+    DEMONIO_DECAIDO,
     SUCUBUS,
     DEMONIO_SUPERIOR
 

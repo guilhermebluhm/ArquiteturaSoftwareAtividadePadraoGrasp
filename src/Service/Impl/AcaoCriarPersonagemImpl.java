@@ -14,7 +14,7 @@ public class AcaoCriarPersonagemImpl implements AcaoCriarPersonagem {
     @Override
     public Personagem geradorPersonagemSolicitadoUsuario(Arma factory) {
 
-        return new Personagem(getUUID,"pica das galaxias",1500.00,TipoClasse.BARBARO,factory);
+        return new Personagem(getUUID,"Assembly",1500.00,TipoClasse.BARBARO,factory);
 
     }
 }
