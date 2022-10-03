@@ -23,10 +23,10 @@ public class AcaoCriarMundoImpl implements AcaoCriarMundo {
         StringBuilder sb = new StringBuilder();
 
         sb.append("\n");
-        sb.append("lore inicial do jogo"+"\n");
+        sb.append("lore inicial do jogo - dificuldade: " + mundo.getNivelMundo()+"\n");
         sb.append("neste fim de mundo desgracado, nojento e violento"+"\n");
         sb.append("chega nosso heroi " + personagem.getNomePersonagem() + " que pertence ao cla dos " + personagem.getClasse_escolhida()+"(S)"+"\n");
-        sb.append("e avista sua primeira missao nesta regiao pois ve " + mundo.getInimigo().getMonstro()+"\n");
+        sb.append("e avista sua primeira missao aqui no " + mundo.getDescricaoNivel() + " pois ve " + mundo.getInimigo().getMonstro()+"\n");
         sb.append("entao devemos sacar nosso(a) " + personagem.getTipoArma().getDescricao()+"\n");
         sb.append("e assim comeca nossa jornada em busca do anjo decaido"+"\n");
 
